@@ -13,7 +13,7 @@ import {
   DropdownItem
 } from 'reactstrap';
 
-import styles from '../assets/style/modules/header.module.css'
+import styles from './Header.module.css'
 
 const communityLinks = {
   doscom: [
