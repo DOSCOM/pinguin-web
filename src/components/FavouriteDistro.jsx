@@ -8,7 +8,6 @@ import {
   CardImg,
   CardBody,
   CardTitle,
-  Button
 } from 'reactstrap';
 
 export default (props) => {
@@ -25,8 +24,7 @@ export default (props) => {
                 <CardImg className="px-4 pt-4" top width="100%" src="http://pinguin.dinus.ac.id/images/mint.png" alt="Card image cap" />
                 <CardBody>
                   <CardTitle>Linux Mint</CardTitle>
-                  <Link to="/linux/tealinuxos">asd</Link>
-                  <Button href="/linux/tealinuxos" color="success" outline>Download</Button>
+                  <Link className="btn btn-outline-success" to="/linux/tealinuxos">Download</Link>
                 </CardBody>
               </Card>
             </Col>

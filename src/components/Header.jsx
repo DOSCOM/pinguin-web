@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'gatsby'
 import {
   Container,
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   UncontrolledDropdown,
@@ -58,7 +58,9 @@ export default class Example extends React.Component {
     return (
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand href="/">Pinguin Dinus</NavbarBrand>
+          <Link to="/" className="navbar-brand">
+            Pinguin Dinus
+          </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
