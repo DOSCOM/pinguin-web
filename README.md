@@ -13,16 +13,16 @@ _soon_
 
 ## Development
 - clone this repo
-- run development mode :  `npm run dev`
+- run development mode : `npm run dev`
 - happy coding
 
-with power of [react]('https://reactjs.org'), we use components for composing the website.
+with power of [react](https://reactjs.org), we use components for composing the website.
 
 knowledge about jsx and es6+ features will help a lot. you can learn it along with react and gatsby in parallel
 
-we use 3rd party components such as [reactstrap]('https://reactstrap.github.io') (bootstrap for react) to simplify development, instead write our own components from scratch. feel free to add another 3rd party components from internet. so many of them are beautiful
+we use 3rd party components such as [reactstrap](https://reactstrap.github.io) (bootstrap for react) to simplify development, instead write our own components from scratch. feel free to add another 3rd party components from internet. so many of them are beautiful
 
-also consider read about [atomic design]('http://bradfrost.com/blog/post/atomic-web-design/'). it's awesome
+also consider read about [atomic design](http://bradfrost.com/blog/post/atomic-web-design). it's awesome
 
 ### Styling
 we use css module for styling. place the styles on `src/assets/style/module`
