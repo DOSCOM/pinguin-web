@@ -13,8 +13,8 @@ export default () => {
         <p className="lead">
           <span>Download</span>
           <Button color="primary ml-2">Distro Favoritmu</Button>
-          <span className="ml-2">atau</span>
-          <Button color="primary ml-2">Lihat Semua ISO</Button>
+          <span className="ml-2">atau ke</span>
+          <Button color="primary ml-2">Index Semua ISO</Button>
         </p>
       </Hero>
       <FavouriteDistro></FavouriteDistro>
