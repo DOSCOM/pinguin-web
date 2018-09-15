@@ -13,6 +13,8 @@ import {
   DropdownItem
 } from 'reactstrap';
 
+import styles from '../assets/style/modules/header.module.css'
+
 const communityLinks = {
   doscom: [
     {
@@ -59,7 +61,7 @@ export default class Example extends React.Component {
           <NavbarBrand href="/">Pinguin Dinus</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className={'ml-auto ' + styles.navLink} navbar>
               <NavItem>
                 <a href="http://pinguin.dinus.ac.id/iso" className="nav-link">
                   All ISO
