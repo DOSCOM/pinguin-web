@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container } from 'reactstrap';
 
-const Example = (props) => {
+export default (props) => {
   let { title, link, children } = props
   return (
     <Jumbotron>
@@ -17,5 +17,3 @@ const Example = (props) => {
     </Jumbotron>
   );
 };
-
-export default Example;
