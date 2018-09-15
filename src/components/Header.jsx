@@ -61,7 +61,7 @@ export default class Example extends React.Component {
           <NavbarBrand href="/">Pinguin Dinus</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className={'ml-auto ' + styles.navLink} navbar>
+            <Nav className="ml-auto" navbar>
               <NavItem>
                 <a href="http://pinguin.dinus.ac.id/iso" className="nav-link">
                   All ISO
@@ -70,7 +70,7 @@ export default class Example extends React.Component {
 
               {
                 Object.keys(communityLinks).map((key) => (
-                  <UncontrolledDropdown key={key} nav inNavbar>
+                  <UncontrolledDropdown key={key} className={styles.navLink} nav inNavbar>
                     <DropdownToggle nav caret>
                       { key }
                     </DropdownToggle>
