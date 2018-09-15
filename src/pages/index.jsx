@@ -1,12 +1,20 @@
-import React from "react"
-import Layout from "../components/Layout"
+import React from 'react';
+import { Button } from 'reactstrap'
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
 
-export default () => (
-  <Layout>
-    <h1>Hi! { 'asuss' } I'm building a fake Gatsby site as part of a tutorial!</h1>
-    <p>
-      What do I like to do? Lots of course but definitely enjoy building
-      websites.
-    </p>
-  </Layout>
-)
+export default () => {
+  return (
+    <Layout>
+      <Hero title="Pinguin Dinus Repository" link="pinguin.dinus.ac.id">
+        <hr className="my-2" />
+        <p className="lead">
+          <span>Download</span>
+          <Button color="primary ml-2">Distro Favoritmu</Button>
+          <span className="ml-2">atau</span>
+          <Button color="primary ml-2">Lihat Semua ISO</Button>
+        </p>
+      </Hero>
+    </Layout>
+  );
+};
