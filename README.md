@@ -1,6 +1,8 @@
 # Pinguin Web
 > This project written using gatsby js 2. If you are not familiar with gatsby dan reactjs yet, please go to [tutorial gatsby](https://www.gatsbyjs.org/). You will learn basic react and gatsby in parallel. Happy coding  :cocktail: :cocktail:
 
+[live demo](https://tender-curie-26c45c.netlify.com/)
+
 # Requirement
 - nodejs >= 8
 - gatsby cli : `npm i -g gatsby-cli`
