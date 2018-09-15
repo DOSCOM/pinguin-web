@@ -1,9 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
-
-import tes from '../../data/tealinuxos'
-console.log(tes);
-
+import Layout from "../components/Layout"
 
 export default () => (
   <Layout>

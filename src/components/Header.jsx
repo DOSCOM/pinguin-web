@@ -70,14 +70,14 @@ export default class Example extends React.Component {
 
               {
                 Object.keys(communityLinks).map((key) => (
-                  <UncontrolledDropdown nav inNavbar>
+                  <UncontrolledDropdown key={key} nav inNavbar>
                     <DropdownToggle nav caret>
                       { key }
                     </DropdownToggle>
                     <DropdownMenu right>
                       {
-                        communityLinks[key].map(link => (
-                          <DropdownItem onClick={() => window.open(link.url, '_blank') }>
+                        communityLinks[key].map((link, index) => (
+                          <DropdownItem key={index} onClick={() => window.open(link.url, '_blank') }>
                             {link.type}
                           </DropdownItem>
                         ))
