@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import {
   Container,
   Collapse,
@@ -8,12 +7,35 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+
+const communityLinks = {
+  doscom: [
+    {
+      type: 'website',
+      url: 'https://doscom.org'
+    }, {
+      type: 'github',
+      url: 'https://github.com/doscom'
+    }, {
+      type: 'instagram',
+      url: 'https://instagr.am/doscomedia'
+    }
+  ],
+  tealinuxOS: [
+    {
+      type: 'website',
+      url: 'https://tealinuxos.org',
+    }, {
+      type: 'github',
+      url: 'https://github.com/tealinuxos'
+    }
+  ]
+}
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -29,39 +51,40 @@ export default class Example extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
     return (
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Pinguin Dinus</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="http://doscom.org/components/" className="nav-link">
-                  Components
-                </Link>
+                <a href="http://pinguin.dinus.ac.id/iso" className="nav-link">
+                  All ISO
+                </a>
               </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+
+              {
+                Object.keys(communityLinks).map((key) => (
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      { key }
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                      {
+                        communityLinks[key].map(link => (
+                          <DropdownItem onClick={() => window.open(link.url, '_blank') }>
+                            {link.type}
+                          </DropdownItem>
+                        ))
+                      }
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                ))
+              }
+
             </Nav>
           </Collapse>
         </Container>
