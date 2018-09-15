@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button } from 'reactstrap'
+
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
+import FavouriteDistro from '../components/FavouriteDistro';
 
 export default () => {
   return (
@@ -15,6 +17,7 @@ export default () => {
           <Button color="primary ml-2">Lihat Semua ISO</Button>
         </p>
       </Hero>
+      <FavouriteDistro></FavouriteDistro>
     </Layout>
   );
 };
