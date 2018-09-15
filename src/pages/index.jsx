@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from 'reactstrap'
 
-import Layout from '../components/Layout';
-import Hero from '../components/Hero';
-import FavouriteDistro from '../components/FavouriteDistro';
+import Layout from '@/components/Layout';
+import Hero from '@/components/Hero';
+import FavouriteDistro from '@/components/FavouriteDistro';
 
 export default () => {
   return (
